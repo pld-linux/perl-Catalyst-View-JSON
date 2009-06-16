@@ -8,13 +8,13 @@
 Summary:	[% class %] - Catalyst JSON View
 #Summary(pl.UTF-8):	
 Name:		perl-Catalyst-View-JSON
-Version:	0.24
+Version:	0.25
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	65cfb99bc13dd59f4be3aa6ff1cb718b
+# Source0-md5:	5877fddd83dd3380d4ea9866dad3727a
 URL:		http://search.cpan.org/dist/Catalyst-View-JSON/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
