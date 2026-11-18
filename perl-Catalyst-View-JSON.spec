@@ -7,21 +7,22 @@
 Summary:	Catalyst::View::JSON - JSON view for your data
 Summary(pl.UTF-8):	Catalyst::View::JSON - widok danych w formacie JSON
 Name:		perl-Catalyst-View-JSON
-Version:	0.33
+Version:	0.37
 Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	30f15ca2a509f522589c1756095dff3c
+# Source0-md5:	9253b311eb6d39399d12ecbac61bb3a2
 URL:		http://search.cpan.org/dist/Catalyst-View-JSON/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Catalyst >= 5.6
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.42
-BuildRequires:	perl-JSON-Any >= 1.15
+BuildRequires:	perl-JSON-MaybeXS >= 1.003000
 BuildRequires:	perl-MRO-Compat
 %endif
+Requires:	perl-JSON-MaybeXS >= 1.003000
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
